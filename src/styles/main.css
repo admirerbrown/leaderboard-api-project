@@ -171,6 +171,8 @@ input {
 }
 
 /* special feature2 */
+
+/* add css  */
 .bouncing-text {
   position: relative;
   display: flex;
@@ -180,6 +182,7 @@ input {
   margin: 50px;
 }
 
+/* Style the letters: */
 .l,
 .e,
 .a,
@@ -190,6 +193,8 @@ input {
   color: #fffbeb;
   text-shadow: 0 3px grey, 0 5px grey, 0 7px grey;
 }
+
+/* Add the bounce effect animation: */
 
 @keyframes bounce {
   0% {
