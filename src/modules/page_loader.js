@@ -21,6 +21,8 @@ const scoreManager = async () => {
     const index = parseInt(i, 10) + 1;
     if (index % 2 === 0) {
       boardItems[i].style.backgroundColor = '#EEEEEE';
+    } else {
+      boardItems[i].style.color = '#CE7777';
     }
   }
 };
