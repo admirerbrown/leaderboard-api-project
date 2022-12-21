@@ -1,36 +1,19 @@
-const scoreManager = () => {
-  const scoreList = [
-    {
-      name: 'Peter Dury',
-      score: 100,
-    },
-    {
-      name: 'Allan Jackson',
-      score: 80,
-    },
-    {
-      name: 'Moses Adjartey',
-      score: 70,
-    },
-    {
-      name: 'Mohammed Dury',
-      score: 40,
-    },
-    {
-      name: 'Micheal Jackson',
-      score: 20,
-    },
-    {
-      name: 'Peter Pan',
-      score: 10,
-    },
-  ];
+const scoreManager = async () => {
+  const endPoint = 'games/yC6mXPc1Vo4spRm9XUzx/scores/';
+  const url = `https://us-central1-js-capstone-backend.cloudfunctions.net/api/${endPoint}`;
+  const response = await fetch(url);
+  const res = await response.json();
+  const scoreList = res.result;
 
   // display scores on the scoreboard to users...
   const scoreboard = document.querySelector('.board');
-  scoreboard.innerHTML += scoreList.map((item) => `<div class="board-item">
-                    <p class="score-text">${item.name}: ${item.score}</p>
-                </div>`).join('');
+  scoreboard.innerHTML += scoreList
+    .map(
+      (item) => `<div class="board-item">
+                    <p class="score-text">${item.user}: ${item.score}</p>
+                </div>`,
+    )
+    .join('');
 
   // change color of book div if index is not even
   const boardItems = document.querySelectorAll('.board-item');
@@ -41,7 +24,5 @@ const scoreManager = () => {
     }
   }
 };
-
-// TODO nextUp: write a function to automatically sort board items by score...
 
 module.exports = scoreManager;
