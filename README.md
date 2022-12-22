@@ -40,7 +40,7 @@
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
 
-## 🚀 Live Demo <a name="live-demo"></a>
+## 🚀 Live Demo <a click here"https://admirerbrown.github.io/leaderboard-api-project/dist">click here</a>
 
 [Leaderboard Api Project](to come)
 
