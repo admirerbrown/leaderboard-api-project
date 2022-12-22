@@ -1,13 +1,13 @@
 /******/ (() => { // webpackBootstrap
-/******/ 	"use strict";
 /******/ 	var __webpack_modules__ = ({
 
-/***/ "./node_modules/css-loader/dist/cjs.js!./src/styles/main.css":
-/*!*******************************************************************!*\
-  !*** ./node_modules/css-loader/dist/cjs.js!./src/styles/main.css ***!
-  \*******************************************************************/
+/***/ "./node_modules/css-loader/dist/cjs.js!./src/styles/style.css":
+/*!********************************************************************!*\
+  !*** ./node_modules/css-loader/dist/cjs.js!./src/styles/style.css ***!
+  \********************************************************************/
 /***/ ((module, __webpack_exports__, __webpack_require__) => {
 
+"use strict";
 __webpack_require__.r(__webpack_exports__);
 /* harmony export */ __webpack_require__.d(__webpack_exports__, {
 /* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
@@ -21,7 +21,7 @@ __webpack_require__.r(__webpack_exports__);
 
 var ___CSS_LOADER_EXPORT___ = _node_modules_css_loader_dist_runtime_api_js__WEBPACK_IMPORTED_MODULE_1___default()((_node_modules_css_loader_dist_runtime_sourceMaps_js__WEBPACK_IMPORTED_MODULE_0___default()));
 // Module
-___CSS_LOADER_EXPORT___.push([module.id, "body {\n  background-color: bisque;\n  height: 100%;\n  display: flex;\n  justify-content: center;\n  align-items: center;\n  flex-direction: column;\n}\n\n.quote {\n  display: flex;\n  text-align: center;\n  width: 70%;\n  justify-content: center;\n}\n", "",{"version":3,"sources":["webpack://./src/styles/main.css"],"names":[],"mappings":"AAAA;EACE,wBAAwB;EACxB,YAAY;EACZ,aAAa;EACb,uBAAuB;EACvB,mBAAmB;EACnB,sBAAsB;AACxB;;AAEA;EACE,aAAa;EACb,kBAAkB;EAClB,UAAU;EACV,uBAAuB;AACzB","sourcesContent":["body {\n  background-color: bisque;\n  height: 100%;\n  display: flex;\n  justify-content: center;\n  align-items: center;\n  flex-direction: column;\n}\n\n.quote {\n  display: flex;\n  text-align: center;\n  width: 70%;\n  justify-content: center;\n}\n"],"sourceRoot":""}]);
+___CSS_LOADER_EXPORT___.push([module.id, "* {\n  padding: 0;\n  margin: 0;\n}\n\nbody {\n  font-size: 25px;\n  background-color: #263159;\n}\n\nh1,\nh3 {\n  color: #fffbeb;\n}\n\nh1 {\n  font-weight: bolder;\n  font-size: 70px;\n  margin: 50px;\n}\n\nh3 {\n  font-weight: bold;\n  font-size: 40px;\n}\n\n.content {\n  display: flex;\n  gap: 150px;\n  justify-content: center;\n  align-items: center;\n  margin: 100px;\n}\n\n.add-score,\n.score-board {\n  width: 40%;\n}\n\n.board {\n  border: 5px solid #ccc;\n  background-color: #495579;\n  padding: 15px;\n  border-radius: 10px;\n  box-shadow: 8px 5px 8px 8px #888;\n}\n\n.score-board {\n  display: flex;\n  flex-direction: column;\n  gap: 50px;\n  padding-top: 15px;\n}\n\n.add-score {\n  display: flex;\n  flex-direction: column;\n  justify-content: flex-start;\n  align-items: center;\n  position: relative;\n}\n\n.score-header {\n  display: flex;\n  justify-content: space-between;\n}\n\n.board-item {\n  display: flex;\n  height: 50px;\n  align-items: center;\n  padding-left: 10px;\n}\n\ninput {\n  display: flex;\n  width: 500px;\n  height: 40px;\n  padding: 5px;\n  font-size: 25px;\n}\n\n.form {\n  display: flex;\n  flex-direction: column;\n  margin-top: 15px;\n}\n\n.submit {\n  width: 100px;\n  display: flex;\n  justify-content: center;\n  align-self: flex-end;\n}\n\n.refresh-btn {\n  width: 150px;\n  font-size: 25px;\n  height: 50px;\n}\n\n/* special feature 1 */\n#snackbar {\n  visibility: hidden;\n  min-width: 300px;\n  background-color: #92b4ec;\n  color: #fff;\n  text-align: center;\n  border-radius: 5px;\n  padding: 16px;\n  position: fixed;\n  z-index: 1;\n  left: 70%;\n  font-size: 25px;\n  font-weight: bold;\n  top: 100px;\n}\n\n#snackbar.show {\n  visibility: visible;\n  -webkit-animation: fadein 0.5s, fadeout 0.5s 2.5s;\n  animation: fadein 0.5s, fadeout 0.5s 2.5s;\n}\n\n@-webkit-keyframes fadein {\n  from {\n    top: 0;\n    opacity: 0;\n  }\n\n  to {\n    top: 30px;\n    opacity: 1;\n  }\n}\n\n@keyframes fadein {\n  from {\n    right: 0;\n    opacity: 0;\n  }\n\n  to {\n    left: 60%;\n    opacity: 1;\n  }\n}\n\n@-webkit-keyframes fadeout {\n  from {\n    right: 30px;\n    opacity: 1;\n  }\n\n  to {\n    right: 0;\n    opacity: 0;\n  }\n}\n\n@keyframes fadeout {\n  from {\n    right: 30px;\n    opacity: 1;\n  }\n\n  to {\n    right: 0;\n    opacity: 0;\n  }\n}\n\n/* special feature2 */\n\n/* add css  */\n.bouncing-text {\n  position: relative;\n  display: flex;\n  font-size: 70px;\n  color: #fffbeb;\n  font-weight: bolder;\n  margin: 50px;\n}\n\n/* Style the letters: */\n.l,\n.e,\n.a,\n.d,\n.r,\n.b,\n.o {\n  color: #fffbeb;\n  text-shadow: 0 3px grey, 0 5px grey, 0 7px grey;\n}\n\n/* Add the bounce effect animation: */\n\n@keyframes bounce {\n  0% {\n    transform: scale(1, 1) translateY(0);\n  }\n\n  10% {\n    transform: scale(1.1, 0.9) translateY(0);\n  }\n\n  30% {\n    transform: scale(0.9, 1.1) translateY(-55px);\n  }\n\n  50% {\n    transform: scale(1.05, 0.95) translateY(0);\n  }\n\n  58% {\n    transform: scale(1, 1) translateY(-7px);\n  }\n\n  65% {\n    transform: scale(1, 1) translateY(0);\n  }\n\n  100% {\n    transform: scale(1, 1) translateY(0);\n  }\n}\n\n.l {\n  animation: bounce 1s ease infinite;\n}\n\n.e {\n  animation: bounce 1s ease infinite 0.1s;\n}\n\n.a {\n  animation: bounce 1s ease infinite 0.2s;\n}\n\n.d {\n  animation: bounce 1s ease infinite 0.3s;\n}\n\n.r {\n  animation: bounce 1s ease infinite 0.4s;\n}\n\n.b {\n  animation: bounce 1s ease infinite 0.5s;\n}\n\n.o {\n  animation: bounce 1s ease infinite 0.6s;\n}\n\n/* add shadow */\n.bouncing-text::before,\n.bouncing-text::after {\n  content: \"\";\n  position: absolute;\n  background-color: rgba(0, 0, 0, 0.4);\n  width: 50px;\n  height: 5px;\n  border-radius: 50%;\n  top: 82px;\n  z-index: -1;\n}\n\n.shadow,\n.shadow-two {\n  position: absolute;\n  top: 82px;\n  z-index: -1;\n}\n\n.shadow::before,\n.shadow::after,\n.shadow-two::before,\n.shadow-two::after {\n  content: \"\";\n  position: absolute;\n  background-color: rgba(0, 0, 0, 0.4);\n  width: 50px;\n  height: 5px;\n  border-radius: 50%;\n  top: 0;\n}\n\n.bouncing-text::before {\n  left: 0;\n  animation: scale 1s linear infinite;\n}\n\n@keyframes scale {\n  0% { transform: scaleX(1); }\n  25% { transform: scaleX(0.4); }\n  50% { transform: scaleX(1); }\n  75% { transform: scaleX(0.9); }\n  100% { transform: scaleX(1); }\n}\n\n.bouncing-text::after {\n  left: 57px;\n  animation: scale 1s linear infinite 0.1s;\n}\n\n.shadow::before {\n  left: 116px;\n  animation: scale 1s linear infinite 0.2s;\n}\n\n.shadow::after {\n  left: 175px;\n  animation: scale 1s linear infinite 0.3s;\n}\n\n.shadow-two::before {\n  left: 232px;\n  animation: scale 1s linear infinite 0.4s;\n}\n\n.shadow-two::after {\n  left: 285px;\n  animation: scale 1s linear infinite 0.5s;\n}\n", "",{"version":3,"sources":["webpack://./src/styles/style.css"],"names":[],"mappings":"AAAA;EACE,UAAU;EACV,SAAS;AACX;;AAEA;EACE,eAAe;EACf,yBAAyB;AAC3B;;AAEA;;EAEE,cAAc;AAChB;;AAEA;EACE,mBAAmB;EACnB,eAAe;EACf,YAAY;AACd;;AAEA;EACE,iBAAiB;EACjB,eAAe;AACjB;;AAEA;EACE,aAAa;EACb,UAAU;EACV,uBAAuB;EACvB,mBAAmB;EACnB,aAAa;AACf;;AAEA;;EAEE,UAAU;AACZ;;AAEA;EACE,sBAAsB;EACtB,yBAAyB;EACzB,aAAa;EACb,mBAAmB;EACnB,gCAAgC;AAClC;;AAEA;EACE,aAAa;EACb,sBAAsB;EACtB,SAAS;EACT,iBAAiB;AACnB;;AAEA;EACE,aAAa;EACb,sBAAsB;EACtB,2BAA2B;EAC3B,mBAAmB;EACnB,kBAAkB;AACpB;;AAEA;EACE,aAAa;EACb,8BAA8B;AAChC;;AAEA;EACE,aAAa;EACb,YAAY;EACZ,mBAAmB;EACnB,kBAAkB;AACpB;;AAEA;EACE,aAAa;EACb,YAAY;EACZ,YAAY;EACZ,YAAY;EACZ,eAAe;AACjB;;AAEA;EACE,aAAa;EACb,sBAAsB;EACtB,gBAAgB;AAClB;;AAEA;EACE,YAAY;EACZ,aAAa;EACb,uBAAuB;EACvB,oBAAoB;AACtB;;AAEA;EACE,YAAY;EACZ,eAAe;EACf,YAAY;AACd;;AAEA,sBAAsB;AACtB;EACE,kBAAkB;EAClB,gBAAgB;EAChB,yBAAyB;EACzB,WAAW;EACX,kBAAkB;EAClB,kBAAkB;EAClB,aAAa;EACb,eAAe;EACf,UAAU;EACV,SAAS;EACT,eAAe;EACf,iBAAiB;EACjB,UAAU;AACZ;;AAEA;EACE,mBAAmB;EACnB,iDAAiD;EACjD,yCAAyC;AAC3C;;AAEA;EACE;IACE,MAAM;IACN,UAAU;EACZ;;EAEA;IACE,SAAS;IACT,UAAU;EACZ;AACF;;AAEA;EACE;IACE,QAAQ;IACR,UAAU;EACZ;;EAEA;IACE,SAAS;IACT,UAAU;EACZ;AACF;;AAEA;EACE;IACE,WAAW;IACX,UAAU;EACZ;;EAEA;IACE,QAAQ;IACR,UAAU;EACZ;AACF;;AAEA;EACE;IACE,WAAW;IACX,UAAU;EACZ;;EAEA;IACE,QAAQ;IACR,UAAU;EACZ;AACF;;AAEA,qBAAqB;;AAErB,aAAa;AACb;EACE,kBAAkB;EAClB,aAAa;EACb,eAAe;EACf,cAAc;EACd,mBAAmB;EACnB,YAAY;AACd;;AAEA,uBAAuB;AACvB;;;;;;;EAOE,cAAc;EACd,+CAA+C;AACjD;;AAEA,qCAAqC;;AAErC;EACE;IACE,oCAAoC;EACtC;;EAEA;IACE,wCAAwC;EAC1C;;EAEA;IACE,4CAA4C;EAC9C;;EAEA;IACE,0CAA0C;EAC5C;;EAEA;IACE,uCAAuC;EACzC;;EAEA;IACE,oCAAoC;EACtC;;EAEA;IACE,oCAAoC;EACtC;AACF;;AAEA;EACE,kCAAkC;AACpC;;AAEA;EACE,uCAAuC;AACzC;;AAEA;EACE,uCAAuC;AACzC;;AAEA;EACE,uCAAuC;AACzC;;AAEA;EACE,uCAAuC;AACzC;;AAEA;EACE,uCAAuC;AACzC;;AAEA;EACE,uCAAuC;AACzC;;AAEA,eAAe;AACf;;EAEE,WAAW;EACX,kBAAkB;EAClB,oCAAoC;EACpC,WAAW;EACX,WAAW;EACX,kBAAkB;EAClB,SAAS;EACT,WAAW;AACb;;AAEA;;EAEE,kBAAkB;EAClB,SAAS;EACT,WAAW;AACb;;AAEA;;;;EAIE,WAAW;EACX,kBAAkB;EAClB,oCAAoC;EACpC,WAAW;EACX,WAAW;EACX,kBAAkB;EAClB,MAAM;AACR;;AAEA;EACE,OAAO;EACP,mCAAmC;AACrC;;AAEA;EACE,KAAK,oBAAoB,EAAE;EAC3B,MAAM,sBAAsB,EAAE;EAC9B,MAAM,oBAAoB,EAAE;EAC5B,MAAM,sBAAsB,EAAE;EAC9B,OAAO,oBAAoB,EAAE;AAC/B;;AAEA;EACE,UAAU;EACV,wCAAwC;AAC1C;;AAEA;EACE,WAAW;EACX,wCAAwC;AAC1C;;AAEA;EACE,WAAW;EACX,wCAAwC;AAC1C;;AAEA;EACE,WAAW;EACX,wCAAwC;AAC1C;;AAEA;EACE,WAAW;EACX,wCAAwC;AAC1C","sourcesContent":["* {\n  padding: 0;\n  margin: 0;\n}\n\nbody {\n  font-size: 25px;\n  background-color: #263159;\n}\n\nh1,\nh3 {\n  color: #fffbeb;\n}\n\nh1 {\n  font-weight: bolder;\n  font-size: 70px;\n  margin: 50px;\n}\n\nh3 {\n  font-weight: bold;\n  font-size: 40px;\n}\n\n.content {\n  display: flex;\n  gap: 150px;\n  justify-content: center;\n  align-items: center;\n  margin: 100px;\n}\n\n.add-score,\n.score-board {\n  width: 40%;\n}\n\n.board {\n  border: 5px solid #ccc;\n  background-color: #495579;\n  padding: 15px;\n  border-radius: 10px;\n  box-shadow: 8px 5px 8px 8px #888;\n}\n\n.score-board {\n  display: flex;\n  flex-direction: column;\n  gap: 50px;\n  padding-top: 15px;\n}\n\n.add-score {\n  display: flex;\n  flex-direction: column;\n  justify-content: flex-start;\n  align-items: center;\n  position: relative;\n}\n\n.score-header {\n  display: flex;\n  justify-content: space-between;\n}\n\n.board-item {\n  display: flex;\n  height: 50px;\n  align-items: center;\n  padding-left: 10px;\n}\n\ninput {\n  display: flex;\n  width: 500px;\n  height: 40px;\n  padding: 5px;\n  font-size: 25px;\n}\n\n.form {\n  display: flex;\n  flex-direction: column;\n  margin-top: 15px;\n}\n\n.submit {\n  width: 100px;\n  display: flex;\n  justify-content: center;\n  align-self: flex-end;\n}\n\n.refresh-btn {\n  width: 150px;\n  font-size: 25px;\n  height: 50px;\n}\n\n/* special feature 1 */\n#snackbar {\n  visibility: hidden;\n  min-width: 300px;\n  background-color: #92b4ec;\n  color: #fff;\n  text-align: center;\n  border-radius: 5px;\n  padding: 16px;\n  position: fixed;\n  z-index: 1;\n  left: 70%;\n  font-size: 25px;\n  font-weight: bold;\n  top: 100px;\n}\n\n#snackbar.show {\n  visibility: visible;\n  -webkit-animation: fadein 0.5s, fadeout 0.5s 2.5s;\n  animation: fadein 0.5s, fadeout 0.5s 2.5s;\n}\n\n@-webkit-keyframes fadein {\n  from {\n    top: 0;\n    opacity: 0;\n  }\n\n  to {\n    top: 30px;\n    opacity: 1;\n  }\n}\n\n@keyframes fadein {\n  from {\n    right: 0;\n    opacity: 0;\n  }\n\n  to {\n    left: 60%;\n    opacity: 1;\n  }\n}\n\n@-webkit-keyframes fadeout {\n  from {\n    right: 30px;\n    opacity: 1;\n  }\n\n  to {\n    right: 0;\n    opacity: 0;\n  }\n}\n\n@keyframes fadeout {\n  from {\n    right: 30px;\n    opacity: 1;\n  }\n\n  to {\n    right: 0;\n    opacity: 0;\n  }\n}\n\n/* special feature2 */\n\n/* add css  */\n.bouncing-text {\n  position: relative;\n  display: flex;\n  font-size: 70px;\n  color: #fffbeb;\n  font-weight: bolder;\n  margin: 50px;\n}\n\n/* Style the letters: */\n.l,\n.e,\n.a,\n.d,\n.r,\n.b,\n.o {\n  color: #fffbeb;\n  text-shadow: 0 3px grey, 0 5px grey, 0 7px grey;\n}\n\n/* Add the bounce effect animation: */\n\n@keyframes bounce {\n  0% {\n    transform: scale(1, 1) translateY(0);\n  }\n\n  10% {\n    transform: scale(1.1, 0.9) translateY(0);\n  }\n\n  30% {\n    transform: scale(0.9, 1.1) translateY(-55px);\n  }\n\n  50% {\n    transform: scale(1.05, 0.95) translateY(0);\n  }\n\n  58% {\n    transform: scale(1, 1) translateY(-7px);\n  }\n\n  65% {\n    transform: scale(1, 1) translateY(0);\n  }\n\n  100% {\n    transform: scale(1, 1) translateY(0);\n  }\n}\n\n.l {\n  animation: bounce 1s ease infinite;\n}\n\n.e {\n  animation: bounce 1s ease infinite 0.1s;\n}\n\n.a {\n  animation: bounce 1s ease infinite 0.2s;\n}\n\n.d {\n  animation: bounce 1s ease infinite 0.3s;\n}\n\n.r {\n  animation: bounce 1s ease infinite 0.4s;\n}\n\n.b {\n  animation: bounce 1s ease infinite 0.5s;\n}\n\n.o {\n  animation: bounce 1s ease infinite 0.6s;\n}\n\n/* add shadow */\n.bouncing-text::before,\n.bouncing-text::after {\n  content: \"\";\n  position: absolute;\n  background-color: rgba(0, 0, 0, 0.4);\n  width: 50px;\n  height: 5px;\n  border-radius: 50%;\n  top: 82px;\n  z-index: -1;\n}\n\n.shadow,\n.shadow-two {\n  position: absolute;\n  top: 82px;\n  z-index: -1;\n}\n\n.shadow::before,\n.shadow::after,\n.shadow-two::before,\n.shadow-two::after {\n  content: \"\";\n  position: absolute;\n  background-color: rgba(0, 0, 0, 0.4);\n  width: 50px;\n  height: 5px;\n  border-radius: 50%;\n  top: 0;\n}\n\n.bouncing-text::before {\n  left: 0;\n  animation: scale 1s linear infinite;\n}\n\n@keyframes scale {\n  0% { transform: scaleX(1); }\n  25% { transform: scaleX(0.4); }\n  50% { transform: scaleX(1); }\n  75% { transform: scaleX(0.9); }\n  100% { transform: scaleX(1); }\n}\n\n.bouncing-text::after {\n  left: 57px;\n  animation: scale 1s linear infinite 0.1s;\n}\n\n.shadow::before {\n  left: 116px;\n  animation: scale 1s linear infinite 0.2s;\n}\n\n.shadow::after {\n  left: 175px;\n  animation: scale 1s linear infinite 0.3s;\n}\n\n.shadow-two::before {\n  left: 232px;\n  animation: scale 1s linear infinite 0.4s;\n}\n\n.shadow-two::after {\n  left: 285px;\n  animation: scale 1s linear infinite 0.5s;\n}\n"],"sourceRoot":""}]);
 // Exports
 /* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (___CSS_LOADER_EXPORT___);
 
@@ -34,6 +34,7 @@ ___CSS_LOADER_EXPORT___.push([module.id, "body {\n  background-color: bisque;\n 
   \*****************************************************/
 /***/ ((module) => {
 
+"use strict";
 
 
 /*
@@ -128,6 +129,7 @@ module.exports = function (cssWithMappingToString) {
   \************************************************************/
 /***/ ((module) => {
 
+"use strict";
 
 
 module.exports = function (item) {
@@ -147,12 +149,13 @@ module.exports = function (item) {
 
 /***/ }),
 
-/***/ "./src/styles/main.css":
-/*!*****************************!*\
-  !*** ./src/styles/main.css ***!
-  \*****************************/
+/***/ "./src/styles/style.css":
+/*!******************************!*\
+  !*** ./src/styles/style.css ***!
+  \******************************/
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
+"use strict";
 __webpack_require__.r(__webpack_exports__);
 /* harmony export */ __webpack_require__.d(__webpack_exports__, {
 /* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
@@ -169,7 +172,7 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _node_modules_style_loader_dist_runtime_insertStyleElement_js__WEBPACK_IMPORTED_MODULE_4___default = /*#__PURE__*/__webpack_require__.n(_node_modules_style_loader_dist_runtime_insertStyleElement_js__WEBPACK_IMPORTED_MODULE_4__);
 /* harmony import */ var _node_modules_style_loader_dist_runtime_styleTagTransform_js__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! !../../node_modules/style-loader/dist/runtime/styleTagTransform.js */ "./node_modules/style-loader/dist/runtime/styleTagTransform.js");
 /* harmony import */ var _node_modules_style_loader_dist_runtime_styleTagTransform_js__WEBPACK_IMPORTED_MODULE_5___default = /*#__PURE__*/__webpack_require__.n(_node_modules_style_loader_dist_runtime_styleTagTransform_js__WEBPACK_IMPORTED_MODULE_5__);
-/* harmony import */ var _node_modules_css_loader_dist_cjs_js_main_css__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! !!../../node_modules/css-loader/dist/cjs.js!./main.css */ "./node_modules/css-loader/dist/cjs.js!./src/styles/main.css");
+/* harmony import */ var _node_modules_css_loader_dist_cjs_js_style_css__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! !!../../node_modules/css-loader/dist/cjs.js!./style.css */ "./node_modules/css-loader/dist/cjs.js!./src/styles/style.css");
 
       
       
@@ -191,12 +194,12 @@ options.setAttributes = (_node_modules_style_loader_dist_runtime_setAttributesWi
 options.domAPI = (_node_modules_style_loader_dist_runtime_styleDomAPI_js__WEBPACK_IMPORTED_MODULE_1___default());
 options.insertStyleElement = (_node_modules_style_loader_dist_runtime_insertStyleElement_js__WEBPACK_IMPORTED_MODULE_4___default());
 
-var update = _node_modules_style_loader_dist_runtime_injectStylesIntoStyleTag_js__WEBPACK_IMPORTED_MODULE_0___default()(_node_modules_css_loader_dist_cjs_js_main_css__WEBPACK_IMPORTED_MODULE_6__["default"], options);
+var update = _node_modules_style_loader_dist_runtime_injectStylesIntoStyleTag_js__WEBPACK_IMPORTED_MODULE_0___default()(_node_modules_css_loader_dist_cjs_js_style_css__WEBPACK_IMPORTED_MODULE_6__["default"], options);
 
 
 
 
-       /* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (_node_modules_css_loader_dist_cjs_js_main_css__WEBPACK_IMPORTED_MODULE_6__["default"] && _node_modules_css_loader_dist_cjs_js_main_css__WEBPACK_IMPORTED_MODULE_6__["default"].locals ? _node_modules_css_loader_dist_cjs_js_main_css__WEBPACK_IMPORTED_MODULE_6__["default"].locals : undefined);
+       /* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (_node_modules_css_loader_dist_cjs_js_style_css__WEBPACK_IMPORTED_MODULE_6__["default"] && _node_modules_css_loader_dist_cjs_js_style_css__WEBPACK_IMPORTED_MODULE_6__["default"].locals ? _node_modules_css_loader_dist_cjs_js_style_css__WEBPACK_IMPORTED_MODULE_6__["default"].locals : undefined);
 
 
 /***/ }),
@@ -207,6 +210,7 @@ var update = _node_modules_style_loader_dist_runtime_injectStylesIntoStyleTag_js
   \****************************************************************************/
 /***/ ((module) => {
 
+"use strict";
 
 
 var stylesInDOM = [];
@@ -320,6 +324,7 @@ module.exports = function (list, options) {
   \********************************************************************/
 /***/ ((module) => {
 
+"use strict";
 
 
 var memo = {};
@@ -368,6 +373,7 @@ module.exports = insertBySelector;
   \**********************************************************************/
 /***/ ((module) => {
 
+"use strict";
 
 
 /* istanbul ignore next  */
@@ -388,6 +394,7 @@ module.exports = insertStyleElement;
   \**********************************************************************************/
 /***/ ((module, __unused_webpack_exports, __webpack_require__) => {
 
+"use strict";
 
 
 /* istanbul ignore next  */
@@ -409,6 +416,7 @@ module.exports = setAttributesWithoutAttributes;
   \***************************************************************/
 /***/ ((module) => {
 
+"use strict";
 
 
 /* istanbul ignore next  */
@@ -488,6 +496,7 @@ module.exports = domAPI;
   \*********************************************************************/
 /***/ ((module) => {
 
+"use strict";
 
 
 /* istanbul ignore next  */
@@ -504,6 +513,147 @@ function styleTagTransform(css, styleElement) {
 }
 
 module.exports = styleTagTransform;
+
+/***/ }),
+
+/***/ "./src/modules/add_score.js":
+/*!**********************************!*\
+  !*** ./src/modules/add_score.js ***!
+  \**********************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
+/* harmony export */ });
+/* harmony import */ var _score_keeper_js__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./score_keeper.js */ "./src/modules/score_keeper.js");
+
+
+// get form data...
+const formDetails = () => {
+  const userName = document.querySelector('.name');
+  const userScore = document.querySelector('.score');
+
+  document.addEventListener('submit', (e) => {
+    e.preventDefault();
+    const name = userName.value;
+    const score = userScore.value;
+    const newPlayer = new _score_keeper_js__WEBPACK_IMPORTED_MODULE_0__["default"](name, score);
+    newPlayer.saveScore(newPlayer);
+
+    // toast notification ...
+    const x = document.getElementById('snackbar');
+    x.className = 'show';
+    setTimeout(() => { x.className = x.className.replace('show', ''); }, 3000);
+
+    userName.value = '';
+    userScore.value = '';
+  });
+};
+
+/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (formDetails);
+
+/***/ }),
+
+/***/ "./src/modules/page_loader.js":
+/*!************************************!*\
+  !*** ./src/modules/page_loader.js ***!
+  \************************************/
+/***/ ((module) => {
+
+const scoreManager = async () => {
+  const endPoint = 'games/yC6mXPc1Vo4spRm9XUzx/scores/';
+  const url = `https://us-central1-js-capstone-backend.cloudfunctions.net/api/${endPoint}`;
+  const response = await fetch(url);
+  const res = await response.json();
+  const scoreList = res.result;
+
+  // display scores on the scoreboard to users...
+  const scoreboard = document.querySelector('.board');
+  scoreboard.innerHTML += scoreList
+    .map(
+      (item) => `<div class="board-item">
+                    <p class="score-text">${item.user}: ${item.score}</p>
+                </div>`,
+    )
+    .join('');
+
+  // change color of book div if index is not even
+  const boardItems = document.querySelectorAll('.board-item');
+  for (let i = 0; i < boardItems.length; i += 1) {
+    const index = parseInt(i, 10) + 1;
+    if (index % 2 === 0) {
+      boardItems[i].style.backgroundColor = '#EEEEEE';
+    } else {
+      boardItems[i].style.color = '#CE7777';
+    }
+  }
+};
+
+module.exports = scoreManager;
+
+
+/***/ }),
+
+/***/ "./src/modules/refresh_page.js":
+/*!*************************************!*\
+  !*** ./src/modules/refresh_page.js ***!
+  \*************************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
+/* harmony export */ });
+/* eslint-disable no-restricted-globals */
+
+// get all current scores from api..
+const refreshBtn = () => {
+  const refresh = document.querySelector('.refresh-btn');
+  refresh.addEventListener('click', () => {
+    location.reload();
+  });
+};
+
+/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (refreshBtn);
+
+
+/***/ }),
+
+/***/ "./src/modules/score_keeper.js":
+/*!*************************************!*\
+  !*** ./src/modules/score_keeper.js ***!
+  \*************************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
+/* harmony export */ });
+/* eslint-disable class-methods-use-this */
+
+class Player {
+  constructor(user, score) {
+    this.user = user;
+    this.score = score;
+  }
+
+  // create new player...
+    saveScore = async (playerObject) => {
+      const endPoint = 'games/yC6mXPc1Vo4spRm9XUzx/scores/';
+      const url = `https://us-central1-js-capstone-backend.cloudfunctions.net/api/${endPoint}`;
+      const response = await fetch(url, {
+        method: 'post',
+        body: JSON.stringify(playerObject),
+        headers: { 'Content-Type': 'application/json' },
+      });
+      await response.json();
+    }
+}
+/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (Player);
 
 /***/ })
 
@@ -581,16 +731,27 @@ module.exports = styleTagTransform;
 /******/ 	
 /************************************************************************/
 var __webpack_exports__ = {};
-// This entry need to be wrapped in an IIFE because it need to be isolated against other modules in the chunk.
+// This entry need to be wrapped in an IIFE because it need to be in strict mode.
 (() => {
+"use strict";
 /*!**********************!*\
   !*** ./src/index.js ***!
   \**********************/
 __webpack_require__.r(__webpack_exports__);
-/* harmony import */ var _styles_main_css__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./styles/main.css */ "./src/styles/main.css");
-// import quoteOftheDay from './newFeature.js';
+/* harmony import */ var _styles_style_css__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./styles/style.css */ "./src/styles/style.css");
+/* harmony import */ var _modules_page_loader_js__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./modules/page_loader.js */ "./src/modules/page_loader.js");
+/* harmony import */ var _modules_page_loader_js__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(_modules_page_loader_js__WEBPACK_IMPORTED_MODULE_1__);
+/* harmony import */ var _modules_add_score_js__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./modules/add_score.js */ "./src/modules/add_score.js");
+/* harmony import */ var _modules_refresh_page_js__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ./modules/refresh_page.js */ "./src/modules/refresh_page.js");
 
-// console.log(quoteOftheDay.quoteOftheDay());
+
+
+
+
+_modules_page_loader_js__WEBPACK_IMPORTED_MODULE_1___default()();
+(0,_modules_add_score_js__WEBPACK_IMPORTED_MODULE_2__["default"])();
+(0,_modules_refresh_page_js__WEBPACK_IMPORTED_MODULE_3__["default"])();
+
 })();
 
 /******/ })()
