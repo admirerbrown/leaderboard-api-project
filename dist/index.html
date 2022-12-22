@@ -9,29 +9,41 @@
 <script defer src="main.js"></script></head>
 
 <body>
-    <h1>Leaderboard</h1>
+    <div class="bouncing-text">
+        <div class="l">L</div>
+        <div class="e">e</div>
+        <div class="a">a</div>
+        <div class="d">d</div>
+        <div class="e">e</div>
+        <div class="r">r</div>
+        <div class="b">b</div>
+        <div class="o">o</div>
+        <div class="a">a</div>
+        <div class="r">r</div>
+        <div class="d">d</div>
+        <div class="shadow"></div>
+        <div class="shadow-two"></div>
+    </div>
     <div class="content">
         <div class="score-board">
-            <div class="score">
-                <p>Recent Scores</p>
+            <div class="score-header">
+                <h3>Recent Scores</h3>
                 <button class="refresh-btn">refresh</button>
             </div>
-            <div class="board">
-                <div class="board-item">
-                    <p>Name: 100</p>
-                </div>
-            </div>
+            <div class="board"></div>
         </div>
 
         <div class="add-score">
-            <p>Add your score</p>
-            <form>
-                <input type="text" class="name" placeholder="Your name" />
-                <input type="text" class="score" placeholder="Your score" />
+            <h3>Add your score</h3>
+            <form class="form">
+                <input type="text" id="data" class="name" placeholder="Your name" required /><br />
+                <input type="text" id="data" class="score" placeholder="Your score" required /><br />
                 <input type="submit" class="submit" value="submit" />
             </form>
         </div>
     </div>
+
+    <div id="snackbar">Success! your score has been saved..</div>
 </body>
 
 </html>
