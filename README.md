@@ -167,7 +167,7 @@ I would like to thank Microverse for providing me with the resources and guiding
 
 ## 📝 License <a name="license"></a>
 
-This project is [MIT](https://github.com/MudasirSherwani/leaderboard-api-project/blob/Development/LICENSE.md) licensed.
+This project is [MIT](https://github.com/admirerbrown/leaderboard-api-project/blob/develop/LICENSE.md) licensed.
  
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
