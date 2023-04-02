@@ -1,103 +1,132 @@
 <a name="readme-top"></a>
+# 📖 Leaderboard Project <a name="about-project"></a>
 
-<div align="center">
+The leaderboard website displays scores submitted by different players. It also allows you to submit your score. All data is preserved thanks to the external Leaderboard API service.This project would help you get started working with API's in JavaScript.
 
-  <img src="murple_logo.png" alt="logo" width="140"  height="auto" />
-  <br/>
-
-  <h3><b>Microverse README Template</b></h3>
-
-</div>
-
-<!-- TABLE OF CONTENTS -->
 
 # 📗 Table of Contents
 
+- [📖 Leaderboard Project ](#-leaderboard-project-)
 - [📗 Table of Contents](#-table-of-contents)
-- [📖 Leaderboard Api Project](#-leaderboard-api-project)
   - [🛠 Built With ](#-built-with-)
+    - [Tech Stack ](#tech-stack-)
+    - [Key Features ](#key-features-)
   - [🚀 Live Demo ](#-live-demo-)
   - [💻 Getting Started ](#-getting-started-)
     - [Prerequisites](#prerequisites)
-    - [Setup](#setup)
+    - [Install](#install)
+    - [Usage](#usage)
+    - [Deployment](#deployment)
+  - [Authors](#authors)
   - [🔭 Future Features ](#-future-features-)
   - [🤝 Contributing ](#-contributing-)
   - [⭐️ Show your support ](#️-show-your-support-)
   - [🙏 Acknowledgments ](#-acknowledgments-)
+  - [📝 License ](#-license-)
 
-<!-- PROJECT DESCRIPTION -->
-
-# 📖 Leaderboard Api Project<a name="about-project"></a>
-
-**Leaderboard Api Project** Is a website that displays scores submitted by different players. It also allows you to submit your score.
 
 ## 🛠 Built With <a name="built-with"></a>
-    HTML
-    CSS
-    Javascript
-    webpack
+
+### Tech Stack <a name="tech-stack"></a>
+- HTML
+- CSS
+- [JavaScript](https://developer.mozilla.org/en-US/docs/Web/JavaScript)
+- Webpack
+
+<details>
+  <summary>Server</summary>
+  <ul>
+    <li><a href="https://netlify.app/">Netlify</a></li>
+  </ul>
+</details>
+
+<details>
+<summary>Database</summary>
+  <ul>
+    <li><a> API </a></li>
+  </ul>
+</details>
+
+### Key Features <a name="key-features"></a>
+
+**Add Scores**
+The leaderboard API allows users to add scores, providing a way for them to track and share their progress and achievements. This feature is essential for any competitive or gamified application that requires users to keep track of their scores or rankings.
+
+**View Scores**
+The leaderboard API also allows users to view scores of other users, creating a sense of community and competition. This feature is important for fostering engagement and interaction among users, as they can compare their scores with others and strive to improve their rankings.
+
+
+
+
+
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
 
-## 🚀 Live Demo <a>click here</a>
+## 🚀 Live Demo <a name="live-demo"></a>
 
-[Leaderboard Api Project](https://admirerbrown.github.io/leaderboard-api-project/dist)
+- [Project Link](https://admirerbrown.github.io/leaderboard-api-project/)
+
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
 
 ## 💻 Getting Started <a name="getting-started"></a>
 
-- Create a local directory that you want to clone the repository.
+- Open GitHub URL of repositry.
+- Download Code repo in zip.
+- Extract and open repo folder into visual studio code or any other Text Editor Software.
+- GitHub Repositry URL: https://github.com/admirerbrown/leaderboard-api-project.git
+  To get a local copy up and running follow these simple example steps.
+  
+  `git clone  https://github.com/admirerbrown/leaderboard-api-project.git`
 
-- Open the command prompt in the created directory.
-
-- On the terminal run this command git clone `https://github.com/admirerbrown/leaderboard-api-project.git`
-
-- Go to the repository folder using command prompt cd `leaderboard-api-project`
-
-- Install the dev dependencies for linters run npm install.
-
-<p align="right">(<a href="#readme-top">back to top</a>)</p>
 
 ### Prerequisites
+- Visual Studio Code
+- Knowldege About HTML / CSS / JAVASCRIPT ES6
+- Webhint
+- Stylelint
+- ESLint
+- node_modules checker
+- Github
+- knowledge of webpack
 
-In order to run this project you need:
 
--Any broswer
-- knowledge of ES6 modules
-- familiarity with basic git commands
-- knowledge of webpack 
-- must have a code editor
+### Install
 
+Install this project with:
+
+```sh
+  npm install
+```
+
+
+### Usage
+
+To run the project in a development server, execute the following command:
+
+```sh
+  - run npm run build
+  - run npm run dev
+```
+
+### Deployment
+
+You can deploy this project using:
+
+https://netlify.app/ OR GITHUB PAGES
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
-### Setup
 
-Clone this repository to your desired folder:
+## Authors
+👤 **Samuel Kyere**
 
-- Open the command prompt in the created directory.
-  
-- Open your code editor of choice
+- GitHub: [@githubhandle](https://github.com/admirerbrown)
+- Twitter: [@twitterhandle](https://twitter.com/brown_admirer)
+- LinkedIn: [LinkedIn](https://www.linkedin.com/in/samuel-ntow-kyere-5036741b4/)
 
-- On the terminal run this command `npm install`
-
-- `run npm run build`
-
-- `run npm run dev`
---->
-
-
-<p align="right">(<a href="#readme-top">back to top</a>)</p>
-
-<!-- Author -->
-
-👤 **Authors**
-Samuel Kyere
-
-- GitHub: [@admirerbrown](https://github.com/admirerbrown)
 
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
@@ -105,30 +134,40 @@ Samuel Kyere
 
 ## 🔭 Future Features <a name="future-features"></a>
 
-- Implement some UX improvements: added transitions and/or animation.
 
-- Implement additional pages.
+- [ ] **Implement some UX improvements: added transitions and/or animation.**
+- [ ] **Implement additional pages.**
+
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
-
 
 ## 🤝 Contributing <a name="contributing"></a>
 
 Contributions, issues, and feature requests are welcome!
 
-Feel free to check the [issues page](https://github.com/admirerbrown/myAwesome-Books-project/issues).
+Feel free to check the [issues page](https://github.com/admirerbrown/leaderboard-api-project/issues).
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
 
 ## ⭐️ Show your support <a name="support"></a>
 
-Give a ⭐️ if you like this project!
+If you like this project please follow me on github and give stars to my repo.
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
 
 ## 🙏 Acknowledgments <a name="acknowledgements"></a>
 
+
+I would like to thank Microverse for providing me with the resources and guiding me to complete this project.
+
+<p align="right">(<a href="#readme-top">back to top</a>)</p>
+
+
+## 📝 License <a name="license"></a>
+
+This project is [MIT](https://github.com/MudasirSherwani/leaderboard-api-project/blob/Development/LICENSE.md) licensed.
+ 
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
