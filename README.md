@@ -65,7 +65,7 @@ The leaderboard API also allows users to view scores of other users, creating a 
 
 ## 🚀 Live Demo <a name="live-demo"></a>
 
-- [Project Link](https://admirerbrown.github.io/leaderboard-api-project/)
+- [Project Link](https://super-leaders.onrender.com/)
 
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
